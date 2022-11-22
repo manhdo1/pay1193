@@ -16,7 +16,8 @@ namespace Pay1193.Services
         decimal OverTimeHours(decimal hoursWorked, decimal contractualHours);
         decimal ContractualEarning(decimal contractualHours, decimal hoursWorked, decimal hourlyRate);
         decimal OvertimeRate(decimal hourlyRate);
-        decimal OvertimeEarnings(decimal overtimeEarnings, decimal contractualEarnings);
+        //update 22/11
+        decimal OvertimeEarnings(decimal overtimeRate, decimal overtimeHours);
         decimal TotalDeduction(decimal tax, decimal nic, decimal studentLoanRepayment, decimal unionFees);
         decimal NetPay(decimal totalEarnings, decimal totalDeduction);
     }

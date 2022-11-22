@@ -132,3 +132,9 @@ C:\Users\maivu\Desktop\pay1193\Pay1193\obj\Debug\net6.0\refint\Pay1193.dll
 C:\Users\maivu\Desktop\pay1193\Pay1193\obj\Debug\net6.0\Pay1193.pdb
 C:\Users\maivu\Desktop\pay1193\Pay1193\obj\Debug\net6.0\Pay1193.genruntimeconfig.cache
 C:\Users\maivu\Desktop\pay1193\Pay1193\obj\Debug\net6.0\ref\Pay1193.dll
+C:\Users\MaiVanPhuongVu\Desktop\project\Pay1193\Pay1193\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\MaiVanPhuongVu\Desktop\project\Pay1193\Pay1193\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\MaiVanPhuongVu\Desktop\project\Pay1193\Pay1193\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\MaiVanPhuongVu\Desktop\project\Pay1193\Pay1193\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\MaiVanPhuongVu\Desktop\project\Pay1193\Pay1193\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\MaiVanPhuongVu\Desktop\project\Pay1193\Pay1193\obj\Debug\net6.0\Pay1193.MvcApplicationPartsAssemblyInfo.cs
