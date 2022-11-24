@@ -132,6 +132,7 @@ C:\Users\maivu\Desktop\pay1193\Pay1193\obj\Debug\net6.0\refint\Pay1193.dll
 C:\Users\maivu\Desktop\pay1193\Pay1193\obj\Debug\net6.0\Pay1193.pdb
 C:\Users\maivu\Desktop\pay1193\Pay1193\obj\Debug\net6.0\Pay1193.genruntimeconfig.cache
 C:\Users\maivu\Desktop\pay1193\Pay1193\obj\Debug\net6.0\ref\Pay1193.dll
+<<<<<<< HEAD
 D:\Mon hoc\moHinhPhanLop\BaiTapCaNhan\pay1193\Pay1193\bin\Debug\net6.0\appsettings.Development.json
 D:\Mon hoc\moHinhPhanLop\BaiTapCaNhan\pay1193\Pay1193\bin\Debug\net6.0\appsettings.json
 D:\Mon hoc\moHinhPhanLop\BaiTapCaNhan\pay1193\Pay1193\bin\Debug\net6.0\Pay1193.staticwebassets.runtime.json
@@ -219,3 +220,11 @@ D:\Mon hoc\moHinhPhanLop\BaiTapCaNhan\pay1193\Pay1193\bin\Debug\net6.0\Microsoft
 D:\Mon hoc\moHinhPhanLop\BaiTapCaNhan\pay1193\Pay1193\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
 D:\Mon hoc\moHinhPhanLop\BaiTapCaNhan\pay1193\Pay1193\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
 D:\Mon hoc\moHinhPhanLop\BaiTapCaNhan\pay1193\Pay1193\bin\Debug\net6.0\RotativaCore.dll
+=======
+C:\Users\MaiVanPhuongVu\Desktop\project\Pay1193\Pay1193\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\MaiVanPhuongVu\Desktop\project\Pay1193\Pay1193\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\MaiVanPhuongVu\Desktop\project\Pay1193\Pay1193\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\MaiVanPhuongVu\Desktop\project\Pay1193\Pay1193\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\MaiVanPhuongVu\Desktop\project\Pay1193\Pay1193\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\MaiVanPhuongVu\Desktop\project\Pay1193\Pay1193\obj\Debug\net6.0\Pay1193.MvcApplicationPartsAssemblyInfo.cs
+>>>>>>> 5fafbe68d1f7664e0f961639473795d8c068ed13

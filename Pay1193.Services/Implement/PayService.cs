@@ -53,6 +53,7 @@ namespace Pay1193.Services.Implement
             _context.PaymentRecords.Where(pay => pay.Id == id).FirstOrDefault();
 
         public decimal NetPay(decimal totalEarnings, decimal totalDeduction)
+<<<<<<< HEAD
             => totalEarnings - totalDeduction;
 
         public decimal OvertimeEarnings(decimal overtimeRate, decimal overtimeHours)
@@ -65,12 +66,31 @@ namespace Pay1193.Services.Implement
                 overTimeHours = 0.00m;
             }
             else if (hoursWorked > contractualHours)
+=======
+        {
+            return totalEarnings - totalDeduction;
+        }
+
+        public decimal OvertimeEarnings(decimal overtimeRate, decimal overTimeHours)
+        {
+            return overTimeHours * overtimeRate;
+        }
+        //update 22/11
+        public decimal OverTimeHours(decimal hoursWorked, decimal contractualHours)
+        {
+            if(hoursWorked <= contractualHours)
+            {
+                overTimeHours = 0.00m;
+            }
+            else
+>>>>>>> 5fafbe68d1f7664e0f961639473795d8c068ed13
             {
                 overTimeHours = hoursWorked - contractualHours;
             }
             return overTimeHours;
         }
 
+<<<<<<< HEAD
         public decimal OvertimeRate(decimal hourlyRate) => hourlyRate * 1.5m;
 
         public decimal TotalDeduction(decimal tax, decimal nic, decimal studentLoanRepayment, decimal unionFees)
@@ -85,5 +105,16 @@ namespace Pay1193.Services.Implement
        
 
         
+=======
+        public decimal OvertimeRate(decimal hourlyRate)
+        {
+            return hourlyRate * 1.5m;
+        }
+
+        public decimal TotalDeduction(decimal tax, decimal nic, decimal studentLoanRepayment, decimal unionFees)
+        {
+            return tax + nic + studentLoanRepayment + unionFees;
+        }
+>>>>>>> 5fafbe68d1f7664e0f961639473795d8c068ed13
     }
 }
