@@ -12,21 +12,22 @@ namespace Pay1193.Services.Implement
         private decimal NIC;
         public decimal NIContribution(decimal totalAmount)
         {
-            if(totalAmount < 758)
+            if (totalAmount < 719)
             {
-                NIRate = 0m;
+             
+                NIRate = .0m;
                 NIC = 0m;
             }
-            else if(totalAmount >=758 && totalAmount <= 4189)
+            else if (totalAmount >= 719 && totalAmount <= 4167)
             {
-                NIRate = .13m;
-                NIC = (totalAmount - 758) * NIRate;
+             
+                NIRate = .12m;
+                NIC = ((totalAmount - 719) * NIRate);
             }
-            else if(totalAmount > 4189)
+            else if (totalAmount > 4167)
             {
-
-                NIRate = .13m;
-                NIC = ((4189 - 758) * .13m) + (totalAmount - 4189) * NIRate;
+                NIRate = .02m;
+                NIC = ((4167 - 719) * .12m) + ((totalAmount - 4167) * NIRate);
             }
             return NIC;
         }

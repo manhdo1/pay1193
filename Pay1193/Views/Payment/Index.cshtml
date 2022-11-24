@@ -1,0 +1,67 @@
+﻿@{
+}
+@model IEnumerable<PaymentRecordIndexViewModel>
+
+<div class="col-md-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    
+                    <li class="breadcrumb-item active" aria-current="page">Payment list</li>
+                </ol>
+            </nav><br />
+
+            <a class="btn btn-xs btn-outline-success" asp-action="Create"> New Pay</a>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Employee</th>
+                        <th scope="col">Paydate</th>
+                        <th scope="col">Month</th>
+                        <th scope="col">TaxYear</th>
+                        <th scope="col">Total Earnings</th>
+                        <th scope="col">Total Deductions</th>
+                        <th scope="col">Net Pay</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <a asp-action="Detail" asp-route-id="@item.Id">
+                                @item.FullName
+                            </a>
+                        </td>
+                        <td>
+                            @item.PayDate.ToString("dd/MM/yyyy")
+                        </td>
+                        <td>@item.PayMonth</td>
+                        <td>@item.Year</td>
+                        <td>@item.TotalEarnings.ToString("C")</td>
+                        <td>@item.TotalDeduction.ToString("c")</td>
+                        <td>@item.NetPayment.ToString("C")</td>
+                        <td>
+                             <a class="text-warning" asp-action="Detail" asp-route-id="@item.Id">
+                                <i class="fas fa-info"></i> Detail
+                            </a>
+                            <a class="text-success" asp-action="Payslip" asp-route-id="@item.Id">
+                                <i class="fas fa-bars"></i> Preview Payslip
+                            </a>
+                            <a class="text-danger" asp-action="GeneratePayslipPdf" asp-route-id="@item.Id">
+                                <i class="fas fa-file-pdf"></i>  Payslip Pdf
+                            </a>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

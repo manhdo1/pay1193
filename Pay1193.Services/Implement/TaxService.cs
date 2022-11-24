@@ -12,24 +12,33 @@ namespace Pay1193.Services.Implement
         private decimal tax;
         public decimal TaxAmount(decimal totalAmount)
         {
-            if(totalAmount < 1200)
+            if (totalAmount <= 1042)
             {
+                
                 taxRate = .0m;
                 tax = totalAmount * taxRate;
             }
-            else if(totalAmount > 1200 && totalAmount <= 5000) {
+            else if (totalAmount > 1042 && totalAmount <= 3125)
+            {
+                
                 taxRate = .20m;
-                tax = (1200 * 0m) + ((totalAmount - 1200) * taxRate);
+               
+                tax = (1042 * .0m) + ((totalAmount - 1042) * taxRate);
             }
-            else if(totalAmount > 5000 && totalAmount <= 15000)
+            else if (totalAmount > 3125 && totalAmount <= 12500)
             {
+               
                 taxRate = .40m;
-                tax = (1200 * 0m) + ((5000 - 1200) * .20m) + ((totalAmount - 5000) * taxRate);
+               
+                tax = (1042 * .0m) + ((3125 - 1042) * .20m) + ((totalAmount - 3125) * taxRate);
             }
-            else if (totalAmount > 15000)
+            else if (totalAmount > 12500)
             {
+              
                 taxRate = .45m;
-                tax = (1200 * 0m) + ((5000 - 1200) * .20m) + ((15000 - 5000) * .40m) + ((totalAmount - 15000) * taxRate);
+            
+                tax = (1042 * .0m) + ((3125 - 1042) * .20m) +
+                    ((12500 - 3125) * .40m) + ((totalAmount - 12500) * taxRate);
             }
             return tax;
         }

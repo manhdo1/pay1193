@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
+
 
 namespace Pay1193.Services
 {
@@ -13,10 +15,15 @@ namespace Pay1193.Services
         PaymentRecord GetById(int id);
         TaxYear GetTaxYearById(int id);
         IEnumerable<PaymentRecord> GetAll();
+        IEnumerable<SelectListItem> GetAllTaxYear();
+
         decimal OverTimeHours(decimal hoursWorked, decimal contractualHours);
         decimal ContractualEarning(decimal contractualHours, decimal hoursWorked, decimal hourlyRate);
         decimal OvertimeRate(decimal hourlyRate);
+        
         decimal OvertimeEarnings(decimal overtimeEarnings, decimal contractualEarnings);
+        decimal TotalEarnings(decimal overtimeEarnings, decimal contractualEarnings);
+
         decimal TotalDeduction(decimal tax, decimal nic, decimal studentLoanRepayment, decimal unionFees);
         decimal NetPay(decimal totalEarnings, decimal totalDeduction);
     }
